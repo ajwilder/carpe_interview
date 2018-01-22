@@ -39,6 +39,17 @@ class UsersController < ApplicationController
   def destroy
   end
 
+  def sample_request
+    @user = User.find(params[:id])
+    shipment = @user.shipments.build
+    if shipment.save
+      flash[:success] = "shipment requested"
+      redirect_to @user
+    else
+      render @user
+    end
+  end 
+
   def show
     @user = User.find(params[:id])
   end
@@ -55,6 +66,9 @@ class UsersController < ApplicationController
     else
       render 'admin_edit'
     end
+  end
+
+  def history
   end
 
   private

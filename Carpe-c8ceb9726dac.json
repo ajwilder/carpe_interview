@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "carpe-192920",
+  "private_key_id": "c8ceb9726dac5fd66a7f126a6057dc3328daec42",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCUz8nVGXYRZAJT\nhowP6iRNkRtP1m4GMOT6P1MlwssF0uUW8K868ZePdqPFNLwU0UpI8VMmPut8Jl4E\nu22W4tLlCrau2OHabbV31SIDCTtal+E2Q1OC2OfAwBhmxVHthyv3viPxtDz+DRwj\n8eEbj6xnCxy2FZYX913L4Z3WbBWsCnY4xvP9d0hD0tQGWeDSkI7s3LRm958qYxmF\nGbpn1PJRVxLVFWU8vXmPn6ExvtTk0T4VUGRtChu3bdXFTErT5bUBGmI5qN0sPYdN\nE2kPVxYN55rlCl1o6XmXFuR0AJa4ArlXxJK9hEKqhz6PKpUNJzJqVeFRhXkAyRVM\nMjNsjIkHAgMBAAECggEAQ29YDLARj3btEPG3VdzqX5YitM68pCSTFw4MPV/lBboY\no4klN0ZUwqfmNg8cLijbi2uEnR/FMcjnMSjIVChsnmt49ooE6yltIyUb2RldYsPR\nxHfFB9YIS5IhXK0NX+Cx3X42JqlhPFUvi+Bn/MfiPf3MoHzuu+SWhjYzAwCO35ta\n1VrLZ66IbXEsRMkBD9sn+ADt8sic7Dr8nRf/x1gnK/xGQ0tEcn6HBM7aLn7TxDOy\nuH2v596qcCa8t9qrDGXjPDy0RB2JetWAtC+kL31Rmx11zmjj8DJZozcsAgrIbirZ\n28kxDR5RzH5nU71CTW4Pc1B/RB1dRiqmAh9x6ZUvKQKBgQDPiDsMu3H5c029kiBl\n4Jnn6OFUdvP6Uyro9LnKAAJouFd7gS5xjkza0o9vDwMzk/AT+ZYyiVIjXh95mRyY\n8sih21PC2kaKrZUgyxSZRQ2W6/SI5tfseUaXeIDulLseHY1CtEzBBBbecFAUuPNK\n3oOGkf+CCmrCa+tWjjEvZYck+QKBgQC3kNLs4NkxuyIEQw3MxpPLvVIWc1Wk0ybS\nYsdLJjZPIsfGU9dwLEhyVY5MIWfG9YVrJyZKRUZC8pW0TWVMhnZXjNqahWd0YYXB\np1af1hD1GyOfdwV43IPDJ++PCL1QkGWccLIunncV2zaOqLF1zUhHdUKN3zuPf5I8\nrFir/dKd/wKBgQDDyk2TXIBRi9OLBoJkOvpYTV/QNQ1GXBI+hyuEhG/BZjC6hwxO\n+6ZMR5wkdbBah7ZW0gA+m0kPruvY53eQYHSiJu6mBRHKIatwrcc4Nmp0uRUR119c\nbKoJmxlgfJbv+YdcqAdFjdsZbjJO6pI1Tyoc2j6I69T+qZv0I+AJTCqs2QKBgDwY\n3fVPZ8wwR+K9UTdJi/mX8dgHynI77unSDQ09ZWpjKKR1roK6/Lzx5bRm+2LX3uZF\n2vNV2rrwULLG4/M50mS3aJpOMqCXjQLpliKeIs8cI32Bqfj3uOubl4Jsig5mN94P\nx0Yb+0Dck/AAqpi2rIM4kKGCBC3mxim3AxDL+LhhAoGBAK2X1mnA07xeycW+8dz0\noG/1ZJ2avdzIXD5fVXS7wAyOUfzPxM5pRzkXB+4nzobIhWRxrgfzg4leZNlJdvU5\nYFRqeZFuKDlw+VPMk6du9oArad79jlAsd7xibxpjIxu12R/YtT6YYvMFVESDHAtB\nqP6vWOxs0uIEu/yRYwEv8Eqv\n-----END PRIVATE KEY-----\n",
+  "client_email": "sample-shipments@carpe-192920.iam.gserviceaccount.com",
+  "client_id": "101323186210074055403",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sample-shipments%40carpe-192920.iam.gserviceaccount.com"
+}

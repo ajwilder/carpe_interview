@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/home', to: 'static_pages#home'
   get '/info', to: 'static_pages#info'
   get '/admin_page', to: 'static_pages#admin_page'
+  get '/shipments', to: 'static_pages#shipments'
   get '/signup', to: 'users#new'
   post '/signup', to: 'users#create'
 
@@ -18,7 +19,7 @@ Rails.application.routes.draw do
 
   resources :users do
     member do
-      get :history, :admin_edit
+      get :history, :admin_edit, :sample_request
       patch :admin_update
     end
   end

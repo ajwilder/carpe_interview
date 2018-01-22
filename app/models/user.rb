@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :shipments
 
   attr_accessor :remember_token, :activation_token, :reset_token
 

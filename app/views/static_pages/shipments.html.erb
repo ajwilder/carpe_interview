@@ -1,0 +1,43 @@
+<h1>All Shipments</h1>
+
+
+<table class="shipments">
+  <tr>
+    <th>
+      Shipment ID
+    </th>
+    <th>
+      User ID
+    </th>
+    <th>
+      Request Date
+    </th>
+    <th>
+      Sent date
+    </th>
+    <th>
+      Send to:
+    </th>
+  </tr>
+  <% @shipments.each do |shipment| %>
+    <tr>
+      <td>
+        <%= shipment.id %>
+      </td>
+      <td>
+        <%= shipment.user.id %>
+      </td>
+      <td>
+        <%= shipment.created_at.strftime("%m/%d") %>
+      </td>
+      <td>
+        -
+      </td>
+      <td>
+        <%= shipment.user.business %>, c/o <%= shipment.user.name %>, <%= shipment.user.street_address %>, <%= shipment.user.city %>, <%= shipment.user.state %>, <%= shipment.user.zip %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<%= button_to "Back to Admin Page", '/admin_page', method: :get, class: 'btn-lg btn-primary center home_button' %>

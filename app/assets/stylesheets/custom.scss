@@ -42,9 +42,9 @@ a {
     background-color: none;
   }
 }
-.nav {
+.nav.navbar-nav {
   margin-right: 10px;
-  li.a:hover{
+  > li > a:hover{
     background-color: white;
   }
 }
@@ -104,6 +104,7 @@ p {
 .header {
   position: fixed;
   background-color: white;
+  font-size: 1.2em;
 }
 
 
@@ -170,5 +171,14 @@ p {
     margin: 4px;
     min-width: 3em;
     width: auto;
+  }
+}
+
+.shipments {
+  width: 80vw;
+  border: 1px solid darkgrey;
+  th {
+    min-width: 20px;
+    border-bottom: 1px solid darkgrey;
   }
 }
