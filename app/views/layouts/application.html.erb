@@ -6,9 +6,44 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+
   </head>
 
   <body>
-    <%= yield %>
+    <header class="header navbar navbar-fixed-top " >
+      <%= link_to image_tag('logo.png'), 'https://www.carpelotion.com', id: "logo", class: "hidden-xs nav" %>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+
+          <% if logged_in? %>
+            <li>
+              <%= link_to 'Your Carpe', @current_user %>
+            </li>
+            <li>
+              <%= link_to "Log out", logout_path, method: :delete %>
+            </li>
+          <% else %>
+            <li><%= link_to "Home",   '/' %></li>
+            <li><%= link_to "Register",   '/signup' %></li>
+            <li><%= link_to "Log in", '/login' %></li>
+          <% end %>
+
+          <li><%= link_to "Lotion Info", '/info' %></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="body_contents container">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+      <%= yield %>
+    </div>
+
+    <%= debug(params) if Rails.env.development? %>
+
   </body>
 </html>

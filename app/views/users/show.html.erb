@@ -1,0 +1,7 @@
+<h1>Welcome, <%= @user.name %></h1>
+<div class="home_button">
+  <%= link_to 'View Shipment History', history_user_path(@user) %>
+</div>
+<div class="home_button">
+  <%= link_to 'Change Profile Information', edit_user_path(@user) %>
+</div>

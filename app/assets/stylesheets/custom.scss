@@ -1,0 +1,160 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+$gray-medium-light: #eaeaea;
+$background-grey: #fafafa;
+$carpe: #fd6d21;
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+$yellow: #FFC40E;
+
+/* universal */
+
+body {
+  padding-top: 80px;
+  font-family: Helvetica, 'sans'
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+a {
+  transition: 0.4s ease;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: #fd6d21;
+    background-color: none;
+  }
+}
+.nav {
+  margin-right: 10px;
+  li.a:hover{
+    background-color: white;
+  }
+}
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+#session_remember_me {
+    width: auto;
+    margin-left: 0;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+
+/* header */
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  padding: 9px;
+  img {
+    height: 60px;
+  }
+}
+.header {
+  position: fixed;
+  background-color: white;
+}
+
+
+
+.home_button {
+  transition: 0.4s ease;
+
+  width: 50vw;
+  margin: 30px auto;
+  background: #fd6d21;
+  border: 1px solid #fd6d21;
+  min-width: 160px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 10px;
+  a {
+    padding: 10px;
+    color: #fff;
+    font-size: 21px;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: white;
+    a{
+      color: #fd6d21;
+    }
+  }
+}
+.user_new {
+  input[type="submit"] {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .small_fields {
+    margin: 10px 0;
+    display: inline-block;
+  }
+  .small_fields#user_zip {
+    width: 100px
+  }
+  .small_fields#user_city{
+    width: 200px;
+  }
+  .small_fields#user_state {
+    width: 50px;
+  }
+}
+.alert {
+  text-align: center;
+  font-size: 1.4em;
+  text-decoration: bold;
+}
