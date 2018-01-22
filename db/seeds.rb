@@ -11,5 +11,6 @@ User.create!(
   state: 'NC',
   zip: 27705,
   admin: true,
-  activated: true
+  activated: true,
+  activated_at: Time.zone.now
 )

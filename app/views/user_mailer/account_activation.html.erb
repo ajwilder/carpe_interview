@@ -1,0 +1,16 @@
+<h1>Carpe Lotion</h1>
+
+<p>
+  Hi <%= @user.name %>,
+</p>
+
+<p>
+  Thanks for registering with Carpe Lotion! Click on the link below to activate your account:
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@user.activation_token,
+                                                    email: @user.email) %>
+
+<p>
+  Once your account is activated, your first sample pack will be shipped!
+</p>

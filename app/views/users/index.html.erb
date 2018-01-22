@@ -4,10 +4,13 @@
   <table class="users_index_table">
     <tr>
       <th>
-        ID
+        User ID
       </th>
       <th>
-        Name
+        User Name
+      </th>
+      <th>
+        Email confirm?
       </th>
     </tr>
     <% @users.each do |user| %>
@@ -17,6 +20,9 @@
         </td>
         <td>
           <%= link_to user.name, admin_edit_user_path(user) %>
+        </td>
+        <td>
+          <%= user.activated %>
         </td>
       </tr>
 

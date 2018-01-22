@@ -10,7 +10,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      flash[:success] = "You're registered!  Confirm your email and your first free sample pack will be shipped!"
+      user.send_activation_email
+      flash[:success] = "You're registered!  Check your email to activate your account.  Once your email is confirmed, your first free sample pack will be shipped!"
       redirect_to @user
     else
       render 'new'
