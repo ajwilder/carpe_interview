@@ -10,6 +10,6 @@ User.create!(
   city: 'Durham',
   state: 'NC',
   zip: 27705,
-  admin: true
-
+  admin: true,
+  activated: true
 )

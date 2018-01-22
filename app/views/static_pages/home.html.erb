@@ -10,5 +10,9 @@
   </div>
   <div class="home_button">
     <%= link_to 'Learn more about how Carpe Lotion can help your patients', '/info' %>
-
   </div>
+  <% if current_user && current_user.admin? %>
+  <div class="home_button">
+    <%= link_to 'Admin Page', '/admin_page' %>
+  </div>
+  <% end %>

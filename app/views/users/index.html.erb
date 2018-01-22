@@ -1,0 +1,28 @@
+<h1>All Users</h1>
+
+<div class="col-md-6 col-md-offset-3">
+  <table class="users_index_table">
+    <tr>
+      <th>
+        ID
+      </th>
+      <th>
+        Name
+      </th>
+    </tr>
+    <% @users.each do |user| %>
+      <tr>
+        <td>
+          <%= user.id %>
+        </td>
+        <td>
+          <%= link_to user.name, admin_edit_user_path(user) %>
+        </td>
+      </tr>
+
+    <% end %>
+
+  </table>
+</div>
+
+<%= button_to "Back to Admin Page", '/admin_page', method: :get, class: 'btn-lg btn-primary center home_button' %>
